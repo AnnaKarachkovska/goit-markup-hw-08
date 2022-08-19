@@ -1,0 +1,134 @@
+.footer {
+    margin-top: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--background-color-dark);
+}
+
+.footer__container {
+    @include flex(baseline, null);
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+}
+
+.footer-address {
+    margin-right: 70px;
+}
+
+.footer-contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-contacts__address {
+    color: var(--light);
+    line-height: 1.7;
+}
+
+.footer-contacts__link {
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color var(--anim);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }    
+}
+
+.footer-join {
+    margin-right: 93px;
+}
+
+.footer-join__text {
+    margin-bottom: 20px;
+
+    color: var(--light);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-socials__link {
+    @include flex(center, center);
+    
+    width: 44px;
+    height: 44px;
+    
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    
+    transition: background-color var(--anim);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.footer-socials__icon {
+    fill: var(--light);
+}
+
+.footer-subscribe__text {
+    margin-bottom: 20px;
+
+    color: var(--light);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.footer-form__field {
+    margin-right: 12px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+
+    width: 358px;
+    height: 50px;
+
+    color: var(--light);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    transition: border-color var(--anim);
+
+    &:focus {
+        border-color: var(--accent-color);
+        outline: transparent;
+    }
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.footer-form__btn {
+    @extend %primary-btn;
+    padding-left: 28px;
+    padding-right: 28px;
+
+    transition: background-color var(--anim);
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
+}
+
+.footer-form__btn
+.footer-form__icon {
+    margin-left: 10px;
+}

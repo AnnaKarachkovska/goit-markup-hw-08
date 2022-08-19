@@ -1,0 +1,52 @@
+.header {
+    border-bottom: 1px solid var(--border-top);
+}
+
+.header__container {
+    @include flex(center, space-between);
+}
+
+.header__logo {
+    margin-right: 93px;
+}
+
+.header__nav {
+    @include flex(center, null);
+}
+
+.header-contacts {
+    display: flex;
+}
+
+.header-contacts__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-contacts__link {
+    @include flex(center, null);
+    gap: 10px;
+
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+    transition: color var(--anim);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.header-contacts__icon {
+    fill: var(--text-color);
+
+    transition: fill var(--anim);
+
+    .header-contacts__link:hover &,
+    .header-contacts__link:focus & {
+        fill: currentColor;
+    }
+}
+

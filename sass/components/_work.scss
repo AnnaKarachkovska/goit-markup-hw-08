@@ -1,0 +1,26 @@
+.work__list {
+    @include flex(null, space-between);
+}
+
+.work__box {
+    position: relative;
+}
+
+.work__text {
+    position: absolute;
+    bottom: 0;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0;
+
+    width: 100%;
+
+    color: var(--light);
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    
+    background-color: rgba(47, 48, 58, 0.8);
+}
