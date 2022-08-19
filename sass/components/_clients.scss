@@ -1,11 +1,24 @@
 .clients__list {
-    @include flex(null, space-between);
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; 
 }
 
 .clients__link {
     @include flex(center, center);
     
-    width: 170px;
+    @include mq(mob-only){
+        width: 210px;
+    }
+
+    @include mq(tab){
+        width: 226px;
+    }
+
+    @include mq(desk){
+        width: 170px;
+    }
+
     height: 92px;
     
     color: var(--icon);

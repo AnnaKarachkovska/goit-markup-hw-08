@@ -5,7 +5,16 @@
     margin-right: auto;
 
     text-align: center;
-    max-width: 1600px;
+    max-width: 480px;
+
+    @include mq(tab){
+        max-width: 768px;
+    }
+
+    @include mq(desk){
+        max-width: 1600px;
+    }
+
     
     background-color: var(--background-color-dark);
     background-image: 
@@ -24,12 +33,23 @@
     margin-left: auto;
     margin-right: auto;
 
-    width: 696px;
+    width: 360px;
+
+    @include mq(desk){
+        width: 696px;
+    }
 
     color: var(--light);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+
+    font-size: 26px;
+    line-height: 1.62;
+
+    @include mq(desk){
+        font-size: 44px;
+        line-height: 1.36;
+    }
+    
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }

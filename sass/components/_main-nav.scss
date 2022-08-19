@@ -1,13 +1,14 @@
 .main-nav {
     display: flex;
+    gap: 50px;
+
+    @include mq(mob-only){
+        display: none;
+    }
 }
 
 .main-nav__item {
     position: relative;
-
-    &:not(:last-child) {
-        margin-right: 50px;
-    }
 }
 
 .main-nav__link {

@@ -23,19 +23,40 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    width: 1200px;
+    @include mq(mob) {
+        width: 480px;
+    }
+
+    @include mq(tab) {
+        width: 768px;
+    }
+
+    @include mq(desk){
+        width: 1200px;
+    }
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include mq(desk){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .section__title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
-    font-size: 36px;
-    line-height: 1.17;
     text-align: center;
+    font-size: 28px;
+    line-height: 1.17;
+
+    @include mq(desk){
+        margin-bottom: 50px;
+
+        font-size: 36px;
+    }
 }

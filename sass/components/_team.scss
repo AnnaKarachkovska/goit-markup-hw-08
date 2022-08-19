@@ -5,7 +5,9 @@
 }
 
 .team-list {
-    @include flex(null, space-between);
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .team-list__item {
@@ -15,6 +17,18 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border: 0 solid var(--border);
     border-radius: 0px 0px 4px 4px;
+
+    @include mq(mob){
+        min-width: 450px;
+    }
+    
+    @include mq(tab){
+        min-width: 354px;
+    }
+
+    @include mq(desk){
+        min-width: 270px;
+    }
 }
 
 .team-list__box {

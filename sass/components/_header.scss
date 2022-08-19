@@ -8,6 +8,15 @@
 
 .header__logo {
     margin-right: 93px;
+
+    @include mq(mob-only){
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    @include mq(tab-only){
+        margin-right: 87px;
+    }
 }
 
 .header__nav {
@@ -16,10 +25,17 @@
 
 .header-contacts {
     display: flex;
-}
+    gap: 50px;
 
-.header-contacts__item:not(:last-child) {
-    margin-right: 50px;
+    @include mq(mob-only){
+        display: none;
+    }
+
+    @include mq(tab-only){
+        display: block;
+        // flex-direction: column;
+        // align-items: flex-start;
+    }
 }
 
 .header-contacts__link {
@@ -28,9 +44,16 @@
 
     color: var(--text-color);
     font-weight: 500;
-    line-height: 1.14;
     letter-spacing: 0.02em;
-    
+
+    @include mq(tab-only) {
+        font-size: 12px;
+    }
+
+    @include mq(desk) {
+        line-height: 1.14;
+    }
+
     transition: color var(--anim);
 
     &:hover,
