@@ -68,6 +68,14 @@
             >
           </li>
         </ul>
+
+        <button class="mob-menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -101,13 +109,33 @@
             <li class="cards__item">
               <a class="cards__link" href="">
                 <div class="cards__thumb">
-                  <img
-                    class="cards__img"
-                    src="./images/img1.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="cards__img"> 
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/cards/desk-card1@1x.jpg 1x,
+                        ./images/cards/desk-card1@2x.jpg 2x"
+                      />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/cards/tab-card1@1x.jpg 1x,
+                        ./images/cards/tab-card1@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/cards/mob-card1@1x.jpg 1x,
+                        ./images/cards/mob-card1@2x.jpg 2x"
+                    />
+                    <img 
+                      src="./images/cards/mob-card1@1x.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -123,13 +151,33 @@
             <li class="cards__item">
               <a class="cards__link" href="">
                 <div class="cards__thumb">
-                  <img
-                    class="cards__img"
-                    src="./images/img2.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="cards__img"> 
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/cards/desk-card2@1x.jpg 1x,
+                        ./images/cards/desk-card2@2x.jpg 2x"
+                      />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/cards/tab-card2@1x.jpg 1x,
+                        ./images/cards/tab-card2@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/cards/mob-card2@1x.jpg 1x,
+                        ./images/cards/mob-card2@2x.jpg 2x"
+                    />
+                    <img 
+                      src="./images/cards/mob-card2@1x.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -145,13 +193,33 @@
             <li class="cards__item">
               <a class="cards__link" href="">
                 <div class="cards__thumb">
-                  <img
-                    class="cards__img"
-                    src="./images/img3.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="cards__img"> 
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/cards/desk-card3@1x.jpg 1x,
+                        ./images/cards/desk-card3@2x.jpg 2x"
+                      />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/cards/tab-card3@1x.jpg 1x,
+                        ./images/cards/tab-card3@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/cards/mob-card3@1x.jpg 1x,
+                        ./images/cards/mob-card3@2x.jpg 2x"
+                    />
+                    <img 
+                      src="./images/cards/mob-card3@1x.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -167,13 +235,33 @@
             <li class="cards__item">
               <a class="cards__link" href="">
                 <div class="cards__thumb">
-                  <img
-                    class="cards__img"
-                    src="./images/img4.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="cards__img"> 
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/cards/desk-card4@1x.jpg 1x,
+                        ./images/cards/desk-card4@2x.jpg 2x"
+                      />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/cards/tab-card4@1x.jpg 1x,
+                        ./images/cards/tab-card4@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/cards/mob-card4@1x.jpg 1x,
+                        ./images/cards/mob-card4@2x.jpg 2x"
+                    />
+                    <img 
+                      src="./images/cards/mob-card4@1x.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -189,13 +277,33 @@
             <li class="cards__item">
               <a class="cards__link" href="">
                 <div class="cards__thumb">
-                  <img
-                    class="cards__img"
-                    src="./images/img5.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="cards__img"> 
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/cards/desk-card5@1x.jpg 1x,
+                        ./images/cards/desk-card5@2x.jpg 2x"
+                      />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/cards/tab-card5@1x.jpg 1x,
+                        ./images/cards/tab-card5@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/cards/mob-card5@1x.jpg 1x,
+                        ./images/cards/mob-card5@2x.jpg 2x"
+                    />
+                    <img 
+                      src="./images/cards/mob-card5@1x.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -211,13 +319,33 @@
             <li class="cards__item">
               <a class="cards__link" href="">
                 <div class="cards__thumb">
-                  <img
-                    class="cards__img"
-                    src="./images/img6.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="cards__img"> 
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/cards/desk-card6@1x.jpg 1x,
+                        ./images/cards/desk-card6@2x.jpg 2x"
+                      />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/cards/tab-card6@1x.jpg 1x,
+                        ./images/cards/tab-card6@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/cards/mob-card6@1x.jpg 1x,
+                        ./images/cards/mob-card6@2x.jpg 2x"
+                    />
+                    <img 
+                      src="./images/cards/mob-card6@1x.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -233,13 +361,33 @@
             <li class="cards__item">
               <a class="cards__link" href="">
                 <div class="cards__thumb">
-                  <img
-                    class="cards__img"
-                    src="./images/img7.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="cards__img"> 
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/cards/desk-card7@1x.jpg 1x,
+                        ./images/cards/desk-card7@2x.jpg 2x"
+                      />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/cards/tab-card7@1x.jpg 1x,
+                        ./images/cards/tab-card7@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/cards/mob-card7@1x.jpg 1x,
+                        ./images/cards/mob-card7@2x.jpg 2x"
+                    />
+                    <img 
+                      src="./images/cards/mob-card7@1x.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -255,13 +403,33 @@
             <li class="cards__item">
               <a class="cards__link" href="">
                 <div class="cards__thumb">
-                  <img
-                    class="cards__img"
-                    src="./images/img8.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="cards__img"> 
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/cards/desk-card8@1x.jpg 1x,
+                        ./images/cards/desk-card8@2x.jpg 2x"
+                      />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/cards/tab-card8@1x.jpg 1x,
+                        ./images/cards/tab-card8@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/cards/mob-card8@1x.jpg 1x,
+                        ./images/cards/mob-card8@2x.jpg 2x"
+                    />
+                    <img 
+                      src="./images/cards/mob-card8@1x.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -277,13 +445,33 @@
             <li class="cards__item">
               <a class="cards__link" href="">
                 <div class="cards__thumb">
-                  <img
-                    class="cards__img"
-                    src="./images/img9.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="cards__img"> 
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/cards/desk-card9@1x.jpg 1x,
+                        ./images/cards/desk-card9@2x.jpg 2x"
+                      />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/cards/tab-card9@1x.jpg 1x,
+                        ./images/cards/tab-card9@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/cards/mob-card9@1x.jpg 1x,
+                        ./images/cards/mob-card9@2x.jpg 2x"
+                    />
+                    <img 
+                      src="./images/cards/mob-card9@1x.jpg"
+                      alt=""
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -389,5 +577,44 @@
         </div>
       </div>
     </footer>
+
+    <!-- Меню для mobile -->
+    <div class="menu js-menu-container" id="mobile-menu">
+      <button class="menu__btn-close js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#menu-close"></use>
+        </svg>
+      </button>
+      <ul class="menu-nav">
+        <li class="menu-nav__item">
+          <a class="menu-nav__link" href="./index.html">Студія</a></li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__link menu-nav__link--active" href="./portfolio.html">Портфоліо</a></li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__link" href="">Контакти</a></li>
+      </ul>
+
+      <a class="menu__tel" href="tel:+380991111111">+38 096 111 11 11</a>
+      <a class="menu__email" href="mailto:info@example.com">info@devstudio.com</a>
+
+      <ul class="menu-socials">
+        <li class="menu-socials__item">
+          <a class="menu-socials__link" href="">Instagram</a></li>
+        <li class="menu-socials__item">
+          <a class="menu-socials__link" href="">Twitter</a></li>
+        <li class="menu-socials__item">
+          <a class="menu-socials__link" href="">Facebook</a></li>
+        <li class="menu-socials__item">
+          <a class="menu-socials__link" href="">LinkedIn</a></li>
+      </ul>
+  </div>
+
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

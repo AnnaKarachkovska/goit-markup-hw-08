@@ -29,6 +29,30 @@
     @include mq(desk){
         min-width: 270px;
     }
+
+    @media screen and (max-width: 480px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.team-list__img {
+    display: block;
+
+    @include mq(mob-only){
+        max-width: 100%;
+        height: auto;
+    }
+
+    @include mq(tab-only){
+        max-width: 354px;
+        height: 374px;
+    }
+
+    @include mq(desk){
+        max-width: 270px;
+        height: 260px;
+    }
 }
 
 .team-list__box {

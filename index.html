@@ -45,7 +45,7 @@
         <ul class="header-contacts">
           <li class="header-contacts__item">
             <a class="header-contacts__link" href="mailto:info@devstudio.com">
-              <svg class="header-contacts__icon" width="16" height="16">
+              <svg class="header-contacts__icon header-contacts__icon--mail" width="14" height="10">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -53,13 +53,21 @@
           </li>
           <li class="header-contacts__item">
             <a class="header-contacts__link" href="tel:+380961111111">
-              <svg class="header-contacts__icon" width="16" height="16">
+              <svg class="header-contacts__icon header-contacts__icon--phone" width="10" height="14">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+
+        <button class="mob-menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -140,10 +148,13 @@
               <div class="work__box">
                 <img
                   class="work__img"
-                  src="./images/box-1.jpg"
+                  srcset="./images/work/work-img1@1x.jpg 1x,
+                  ./images/work/work-img1@2x.jpg 2x"
+                  src="./images/work/work-img1@1x.jpg"
                   alt="Створюємо десктопні додатки"
                   width="370"
                   height="294"
+                  loading="lazy"
                 />
                 <p class="work__text">Десктопні додатки</p>
               </div>
@@ -152,10 +163,13 @@
               <div class="work__box">
                 <img
                   class="work__img"
-                  src="./images/box-2.jpg"
+                  srcset="./images/work/work-img2@1x.jpg 1x,
+                  ./images/work/work-img2@2x.jpg 2x"
+                  src="./images/work/work-img2@1x.jpg"
                   alt="Створюємо мобільні додатки"
                   width="370"
                   height="294"
+                  loading="lazy"
                 />
                 <p class="work__text">Мобільні додатки</p>
               </div>
@@ -164,10 +178,13 @@
               <div class="work__box">
                 <img
                   class="work__img"
-                  src="./images/box-3.jpg"
+                  srcset="../images/work/work-img3@1x.jpg 1x,
+                  ./images/work/work-img3@2x.jpg 2x"
+                  src="./images/work/work-img3@1x.jpg"
                   alt="Пропонуємо креативні дизайнерські рішення"
                   width="370"
                   height="294"
+                  loading="lazy"
                 />
                 <p class="work__text">Дизайнерські рішення</p>
               </div>
@@ -182,13 +199,33 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img
-                class="team-list__img"
-                src="./images/img.jpg"
-                alt=""
-                width="270"
-                height="260"
-              />
+              <picture class="team-list__img"> 
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/desk-team-img1@1x.jpg 1x,
+                    ./images/team/desk-team-img1@2x.jpg 2x"
+                  />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tab-team-img1@1x.jpg 1x,
+                    ./images/team/tab-team-img1@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mob-team-img1@1x.jpg 1x,
+                    ./images/team/mob-team-img1@2x.jpg 2x"
+                />
+                <img 
+                  src="./images/team/mob-team-img1@1x.jpg"
+                  alt=""
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-list__box">
                 <h3 class="team-list__name">Ігор Демʼяненко</h3>
                 <p class="team-list__description" lang="en">Product Designer</p>
@@ -241,13 +278,33 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__img"
-                src="./images/img-2.jpg"
-                alt=""
-                width="270"
-                height="260"
-              />
+              <picture class="team-list__img"> 
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/desk-team-img2@1x.jpg 1x,
+                    ./images/team/desk-team-img2@2x.jpg 2x"
+                  />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tab-team-img2@1x.jpg 1x,
+                    ./images/team/tab-team-img2@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mob-team-img2@1x.jpg 1x,
+                    ./images/team/mob-team-img2@2x.jpg 2x"
+                />
+                <img 
+                  src="./images/team/mob-team-img2@1x.jpg"
+                  alt=""
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-list__box">
                 <h3 class="team-list__name">Ольга Репіна</h3>
                 <p class="team-list__description" lang="en">
@@ -302,13 +359,33 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__img"
-                src="./images/img-3.jpg"
-                alt=""
-                width="270"
-                height="260"
-              />
+              <picture class="team-list__img"> 
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/desk-team-img3@1x.jpg 1x,
+                    ./images/team/desk-team-img3@2x.jpg 2x"
+                  />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tab-team-img3@1x.jpg 1x,
+                    ./images/team/tab-team-img3@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mob-team-img3@1x.jpg 1x,
+                    ./images/team/mob-team-img3@2x.jpg 2x"
+                />
+                <img 
+                  src="./images/team/mob-team-img3@1x.jpg"
+                  alt=""
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-list__box">
                 <h3 class="team-list__name">Микола Тарасов</h3>
                 <p class="team-list__description" lang="en">Marketing</p>
@@ -361,13 +438,36 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__img"
-                src="./images/img-4.jpg"
-                alt=""
-                width="270"
-                height="260"
-              />
+              <picture class="team-list__img"> 
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/desk-team-img4@1x.jpg 1x,
+                    ./images/team/desk-team-img4@2x.jpg 2x"
+                   
+                  />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/tab-team-img4@1x.jpg 1x,
+                    ./images/team/tab-team-img4@2x.jpg 2x"
+                   
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mob-team-img4@1x.jpg 1x,
+                    ./images/team/mob-team-img4@2x.jpg 2x"
+                   
+                />
+                <img 
+                  src="./images/team/mob-team-img4@1x.jpg"
+                  alt=""
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-list__box">
                 <h3 class="team-list__name">Михайло Єрмаков</h3>
                 <p class="team-list__description" lang="en">UI Designer</p>
@@ -564,7 +664,38 @@
       </div>
     </footer>
 
-    <!-- Модальне вікно -->
+    <!-- Меню для mobile -->
+    <div class="menu js-menu-container" id="mobile-menu">
+        <button class="menu__btn-close js-close-menu">
+          <svg class="menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#menu-close"></use>
+          </svg>
+        </button>
+        <ul class="menu-nav">
+          <li class="menu-nav__item">
+            <a class="menu-nav__link menu-nav__link--active" href="./index.html">Студія</a></li>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="./portfolio.html">Портфоліо</a></li>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="">Контакти</a></li>
+        </ul>
+
+        <a class="menu__tel" href="tel:+380991111111">+38 096 111 11 11</a>
+        <a class="menu__email" href="mailto:info@example.com">info@devstudio.com</a>
+
+        <ul class="menu-socials">
+          <li class="menu-socials__item">
+            <a class="menu-socials__link" href="">Instagram</a></li>
+          <li class="menu-socials__item">
+            <a class="menu-socials__link" href="">Twitter</a></li>
+          <li class="menu-socials__item">
+            <a class="menu-socials__link" href="">Facebook</a></li>
+          <li class="menu-socials__item">
+            <a class="menu-socials__link" href="">LinkedIn</a></li>
+        </ul>
+    </div>
+
+    <!-- Модальне вікно форма -->
     <div class="backdrop backdrop--hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
@@ -634,5 +765,12 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

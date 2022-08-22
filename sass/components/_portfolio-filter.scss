@@ -1,11 +1,18 @@
 .filter {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     @include flex(null, center);
-}
+    gap: 8px;
 
-.filter__item + .filter__item {
-    margin-left: 8px;
+    @include mq(mob-only){
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        max-width: 326px;
+    }
+
+    @include mq(desk){
+        margin-bottom: 50px;
+    }
 }
 
 .filter__btn {

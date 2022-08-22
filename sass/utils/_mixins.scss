@@ -39,18 +39,9 @@
         @content;
       }
     }
-  }
-  
-  @mixin section {
-    padding-top: 84px;
-    padding-bottom: 84px;
-  
-    @include mq(tab) {
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-    @include mq(desk) {
-      padding-top: 130px;
-      padding-bottom: 130px;
+    @if $type == 'retina' {
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        @content;
+      }
     }
   }

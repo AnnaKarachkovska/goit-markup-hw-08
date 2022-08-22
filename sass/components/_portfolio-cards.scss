@@ -5,11 +5,21 @@
 }
 
 .cards__item {
-    flex-basis: calc((100% - 60px) / 3);
+    width: 100%;
+
+    @include mq(tab-only){
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    @include mq(desk){
+        flex-basis: calc((100% - 60px) / 3);
+    }
 }
 
 .cards__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
 
     transition: box-shadow var(--anim);
 
@@ -25,6 +35,20 @@
 .cards__thumb {
     position: relative;
     overflow: hidden;
+}
+
+.cards__img {
+    @include mq(mob){
+        width: 450px;
+    }
+
+    @include mq(tab){
+        width: 354px;
+    }
+
+    @include mq(desk){
+        width: 370px;
+    }
 }
 
 .cards__text {
@@ -58,6 +82,8 @@
 
 .cards-box {
     padding: 20px 24px;
+
+    flex-grow: 1;
 
     border: 1px solid var(--border);
     border-top: none;

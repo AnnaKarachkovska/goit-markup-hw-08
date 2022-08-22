@@ -7,7 +7,26 @@
 }
 
 .footer__container {
-    @include flex(baseline, null);
+    display: flex;
+
+    @include mq(not-desk){
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    @include mq(tab-only){
+        flex-direction: row;
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @include mq(desk){
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
 }
 
 .footer__logo {
@@ -15,7 +34,17 @@
 }
 
 .footer-address {
-    margin-right: 70px;
+    @include mq(not-desk){
+        text-align: center;
+    }
+
+    @include mq(tab-only){
+        margin-right: 165px;
+    }
+
+    @include mq(desk){
+        margin-right: 70px;
+    }
 }
 
 .footer-contacts__item:not(:last-child) {
@@ -39,7 +68,13 @@
 }
 
 .footer-join {
-    margin-right: 93px;
+    @include mq(not-desk){
+        text-align: center;
+    }
+
+    @include mq(desk){
+        margin-right: 93px;
+    }
 }
 
 .footer-join__text {
@@ -77,6 +112,12 @@
     fill: var(--light);
 }
 
+.footer-subscribe {
+    @include mq(not-desk){
+        text-align: center;
+    }
+}
+
 .footer-subscribe__text {
     margin-bottom: 20px;
 
@@ -87,13 +128,21 @@
 }
 
 .footer-form__field {
-    margin-right: 12px;
     padding-top: 13px;
     padding-bottom: 15px;
     padding-left: 16px;
 
-    width: 358px;
+    width: 100%;
     height: 50px;
+
+    @include mq(mob) {
+        max-width: 450px;
+    }
+
+    @include mq(desk){
+        margin-right: 12px;
+        width: 358px;
+    }
 
     color: var(--light);
     background-color: transparent;
@@ -117,8 +166,15 @@
 
 .footer-form__btn {
     @extend %primary-btn;
+
+    @include mq(not-desk){
+        margin-top: 20px;
+    }
+
     padding-left: 28px;
     padding-right: 28px;
+
+    max-width: 200px;
 
     transition: background-color var(--anim);
 
