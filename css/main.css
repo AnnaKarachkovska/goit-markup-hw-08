@@ -1484,6 +1484,12 @@ body {
           transform: translateY(0);
   opacity: 1;
 }
+@media screen and (max-width: 479px) {
+  .cards__text {
+    padding: 24px;
+    font-size: 14px;
+  }
+}
 
 .cards-box {
   padding: 20px 24px;
