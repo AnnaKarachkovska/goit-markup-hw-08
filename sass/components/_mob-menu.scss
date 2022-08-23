@@ -19,6 +19,9 @@
     width: 100vw;
     height: 100vh;
 
+    display: flex;
+    flex-direction: column;
+
     font-weight: 500;
     letter-spacing: 0.02em;
     line-height: 1.17;
@@ -61,7 +64,7 @@
 }
 
 .menu-nav {
-    margin-bottom: 302px;
+    margin-bottom: auto;
 }
 
 .menu-nav__item {
@@ -83,9 +86,14 @@
     margin-bottom: 32px;
 
     display: block;
+    width: 100%;
 
     color: var(--accent-color);
     font-size: 34px;
+
+    @media screen and (max-width: 480px){
+        font-size: 28px;
+    }
 }
 
 .menu__email {
@@ -99,15 +107,14 @@
 
 .menu-socials {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .menu-socials__item {
     &:not(:last-child) {
         padding-right: 10px;
         border-right: 1px solid rgba(33, 33, 33, 0.2);
-    }
-    &:not(:first-child) {
-        padding-left: 10px;
     }
 }
 
